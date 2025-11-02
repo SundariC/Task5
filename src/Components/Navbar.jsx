@@ -3,7 +3,7 @@ import { TiShoppingCart } from "react-icons/ti";
 
 const Navbar = ({cartCount, onCartClick}) => {
   return (
-    <nav className="navbar bg-sky-200 p-6 text-white fixed w-full top-0 z-10 shadow-md mb-4">
+    <nav className="navbar bg-indigo-200 p-6 text-white fixed w-full top-0 z-10 shadow-md mb-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="brand text-lg text-sky-700 font-bold">MY STORE</div>
         <div className="nav-actions">
