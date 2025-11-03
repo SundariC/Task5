@@ -11,10 +11,10 @@ const CartModal = ({ cart, onClose, removeFromCart }) => {
     >
       {/* Modal box */}
       <div
-        className="bg-sky-100 p-6 rounded-lg shadow-2xl w-150 max-h-[80vh] overflow-y-auto"
+        className="bg-pink-200 p-6 rounded-lg shadow-2xl w-150 max-h-[80vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()} // stops background click
       >
-        <h2 className="text-xl font-bold text-center text-blue-900 mb-4">
+        <h2 className="text-xl font-bold text-center text-pink-900 mb-4">
           Your Cart 🛒
         </h2>
 
@@ -33,14 +33,14 @@ const CartModal = ({ cart, onClose, removeFromCart }) => {
                   className="w-12 h-12 object-contain"
                 />
                 <div className="flex-1 ml-3">
-                  <p className="font-semibold text-green-800 text-sm">
+                  <p className="font-semibold text-pink-800 text-sm">
                     {item.title}
                   </p>
                   <p className="text-gray-700 text-sm">
                     ${item.price.toFixed(2)} × {item.quantity}
                   </p>
                 </div>
-            <p className="font-bold text-green-900">
+            <p className="font-bold text-pink-800">
                   ${(item.price * item.quantity).toFixed(2)}
                 </p>
               <div className="flex flex-col items-end">
@@ -54,7 +54,7 @@ const CartModal = ({ cart, onClose, removeFromCart }) => {
              
               </div>
             ))}
-            <div className="text-right mt-4 font-bold text-lg text-green-900">
+            <div className="text-right mt-4 font-bold text-lg text-pink-800">
               Total: ${total.toFixed(2)}
             </div>
           </>
@@ -62,7 +62,7 @@ const CartModal = ({ cart, onClose, removeFromCart }) => {
 
         <button
           onClick={onClose}
-          className="bg-blue-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-blue-700"
+          className="bg-rose-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-rose-700"
         >
           Close
         </button>
